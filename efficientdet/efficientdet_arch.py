@@ -736,4 +736,4 @@ def efficientdet(features, model_name=None, config=None, **kwargs):
   logging.info('backbone+fpn+box params/flops = {:.6f}M, {:.9f}B'.format(
       *utils.num_params_flops()))
 
-  return class_outputs, box_outputs
+  return class_outputs, box_outputs, fpn_feats
